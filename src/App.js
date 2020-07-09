@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import {Route, Switch} from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Home from "./pages/Home";
+import Default from "./pages/Default";
+import Navbar from "../src/components/Navbar";
+import Sidebar from "../src/components/Sidebar";
+import CoursesPage from "../src/pages/CoursesPage";
+import ContactPage from "../src/pages/ContactPage";
+import PortfolioPage from "../src/pages/PortfolioPage"
+
+import GlobalStyles from "./components/globals/GlobalStyles";
+
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        
+        <GlobalStyles />
+        <Navbar />
+        <Sidebar />
+        <Switch>
+            <Route exact path= "/" component={Home} />
+            <Route exact path= "/courses" component={CoursesPage} />
+            <Route exact path= "/contact" component={ContactPage} />
+            <Route exact path= "/portfolio" component={PortfolioPage} />
+            <Route component = {Default} />
+        </Switch>
+        
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

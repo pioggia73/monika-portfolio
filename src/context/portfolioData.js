@@ -42,9 +42,9 @@ export const portfolioData = [
     }, {
         id: 6,
         img: project6,
-        name: 'Hangman Game',
-        sourcePath: 'https://github.com/pioggia73/hangman-game',
-        pagePath: 'https://monika-hangman.netlify.app'
+        name: 'Crown Clothing',
+        sourcePath: 'https://github.com/pioggia73/crown-clothing',
+        pagePath: 'https://crown-clothing-monika.netlify.app'
     }
 ]
 

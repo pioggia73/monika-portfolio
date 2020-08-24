@@ -14,39 +14,45 @@ export const portfolioData = [
         img: project3,
         name: 'Cocktail Project',
         sourcePath: 'https://github.com/pioggia73/cocktailDB',
-        pagePath: 'https://monika-cocktails.netlify.app'
+        pagePath: 'https://monika-cocktails.netlify.app',
+        skills: ['React', 'API']
     }, {
         id: 2,
         img: project1,
         name: 'Beach Resort',
         sourcePath: 'https://github.com/pioggia73/beachResort',
-        pagePath: 'https://beach-resort-monika.netlify.app'
+        pagePath: 'https://beach-resort-monika.netlify.app',
+        skills: ['React']
     }, {
         id: 3,
         img: project4,
         name: 'Notes App',
         sourcePath: 'https://github.com/pioggia73/beachResort',
-        pagePath: 'https://monika-notesapp.netlify.app'
+        pagePath: 'https://monika-notesapp.netlify.app',
+        skills: ['React']
     }, {
         id: 4,
         img: project2,
         name: 'Tech Store',
         sourcePath: 'https://github.com/pioggia73/vintage-tech-store',
-        pagePath: 'https://vintage-tech-store.netlify.app'
+        pagePath: 'https://vintage-tech-store.netlify.app',
+        skills: ['React', 'Context API', 'Strapi', 'Stripe']
     }, {
         id: 5,
         img: project5,
         name: 'ToDo App',
         sourcePath: 'https://github.com/pioggia73/to-do-app',
-        pagePath: 'https://monika-todoapp.netlify.app'
+        pagePath: 'https://monika-todoapp.netlify.app',
+        skills: ['JavaScript']
     }, {
         id: 6,
         img: project6,
         name: 'Crown Clothing',
         sourcePath: 'https://github.com/pioggia73/crown-clothing',
-        pagePath: 'https://crown-clothing-monika.netlify.app'
+        pagePath: 'https://crown-clothing-monika.netlify.app',
+        skills: ['React', 'Redux', 'Firestore', 'Stripe']
     }
-]
+];
 
 
 

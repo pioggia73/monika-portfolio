@@ -5,8 +5,6 @@ import Course from "../components/Course";
 import Section from "../components/globals/Section";
 import Title from "../components/globals/Title";
 
-
-
 const CoursesPage = ({className, color}) => {
     return <ProductConsumer>
     

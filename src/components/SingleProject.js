@@ -3,13 +3,14 @@ import styled from 'styled-components';
 import {ProductConsumer} from '../context';
 import {setRem, setColors, setLetterSpacing, setTransition, setShadow} from '../styles';
 import {SmallBtn} from '../components/globals/Buttons';
+import PortfolioFooter from '../components/PortfolioFooter';
 
 const SingleProject = ({project, className}) => {
 
     return <ProductConsumer>
     
         {value => 
-            {const {img = '', name ='', sourcePath, pagePath} = project
+            {const {img = '', name ='', sourcePath, pagePath, skills } = project
         
                 return <article className={className}>
                     <div className="img-container">
@@ -21,10 +22,12 @@ const SingleProject = ({project, className}) => {
                         <h6>{name}</h6>
                         <SmallBtn as="a" href={sourcePath}>view source</SmallBtn>
                     </div>
+                    <PortfolioFooter skills={skills}/>
+                   
                 </article>
         }}
     </ProductConsumer>
-}
+};
 
 export default styled(SingleProject)`
 
@@ -73,6 +76,16 @@ export default styled(SingleProject)`
             align-self: center;
         }
     }
+
+    .skills-container {
+        font-size: ${setRem(15)};
+        padding: ${setRem(10)};
+        display: flex;
+        justify-content: space-around;
+        background: ${setColors.primaryColor};
+        color: ${setColors.mainWhite};
+        width: 100%; 
+    };
 
     ${setShadow.light};
     ${setTransition()};

@@ -12,15 +12,15 @@ const Course = ({course, className})=> {
 
             const {text, path} = course;
 
-            return  <li className={className}>
-                        <div className="info">{text}</div>
-                        <span>
-                        <SmallBtn as="a" href={path}>view more</SmallBtn>
-                        </span>
-                    </li> 
+            return <li className={className}>
+                <div className="info">{text}</div>
+                    <span>
+                    <SmallBtn as="a" href={path}>view more</SmallBtn>
+                    </span>
+            </li> 
         }}
     </ProductConsumer>
-}
+};
 
 export default styled(Course)`
     

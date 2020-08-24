@@ -6,11 +6,11 @@ export const socialData = [
     {
         id: 1,
         icon: <FaGithub />,
-        url: 'https://github.com/pioggia73/moje-portfolio'
+        url: 'https://github.com/pioggia73?tab=repositories'
     }, 
         {
             id: 2,
             icon: <FaLinkedin />,
-            url: 'http://www.linkedin.com'
+            url: 'https://www.linkedin.com/mynetwork'
     }
 ]

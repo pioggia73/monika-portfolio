@@ -18,7 +18,7 @@ export default styled(PortfolioFooter)`
 
 .skills {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-evenly;
    padding: ${setRem(8)} ${setRem(26)};
 }
 `;
